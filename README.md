@@ -1,6 +1,6 @@
 ---
 title: Text2img
-emoji: 🔥
+emoji: 🎨📝
 colorFrom: yellow
 colorTo: indigo
 sdk: streamlit
