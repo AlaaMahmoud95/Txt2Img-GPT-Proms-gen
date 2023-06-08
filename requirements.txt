@@ -1,0 +1,10 @@
+streamlit
+altair<5
+opencv-python-headless
+numpy
+easyocr
+Pillow
+diffusers
+torch
+transformers
+accelerate
