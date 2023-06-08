@@ -80,9 +80,7 @@ if 'PROMPTS' in st.session_state :
 else :
     prom = st.text_input("# Prompt",'')
 
-
-
-                               
+                            
 c1,c2,c3 = st.columns([1,1,3])
 c4,c5 = st.columns(2)
 with c1:
