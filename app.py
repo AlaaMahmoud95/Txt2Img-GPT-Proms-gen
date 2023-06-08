@@ -6,7 +6,7 @@ from diffusers import StableDiffusionPipeline
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 
-def create_model(loc = "stabilityai/stable-diffusion-2-1-base", mch = 'cuda'):
+def create_model(loc = "stabilityai/stable-diffusion-2-1-base", mch = 'cpu'):
     pipe = StableDiffusionPipeline.from_pretrained(loc)
     pipe = pipe.to(mch)
     return pipe
@@ -16,7 +16,7 @@ def tok_mod():
   tokenizer = GPT2Tokenizer.from_pretrained('distilgpt2')
   tokenizer.add_special_tokens({'pad_token': '[PAD]'})
   model = GPT2LMHeadModel.from_pretrained('FredZhang7/distilgpt2-stable-diffusion-v2')
-  model.to('cuda')
+  model.to('cpu')
   return model,tokenizer
 
 
@@ -96,7 +96,7 @@ with c4:
 with c5:
   sl_2 = st.slider("hight",128,1024,512,8)
 
-st.session_state.generator = torch.Generator("cuda").manual_seed(int(bu_1))
+st.session_state.generator = torch.Generator("cpu").manual_seed(int(bu_1))
 
 create = st.button("Imagine")
 
