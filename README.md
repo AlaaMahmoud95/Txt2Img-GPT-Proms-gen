@@ -11,7 +11,10 @@ license: openrail
 ---
 
 ---
-### APP URL : https://alaamahmoud95-txt2img-gpt-proms-gen-app-vd4zwv.streamlit.app/
+# APP URLs
+
+- Streamlit : https://alaamahmoud95-txt2img-gpt-proms-gen-app-vd4zwv.streamlit.app/
+- Hugging Face : https://huggingface.co/spaces/3laa2/Text2img
 ---
 
 # Demo
